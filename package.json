@@ -1,13 +1,8 @@
 {
-  "name": "todomvc-react-flux",
+  "name": "react-flux",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "watchify -o js/bundle.js -v -d .",
-    "build": "NODE_ENV=production browserify . | uglifyjs -cm > js/bundle.min.js",
-    "test": "jest"
-  },
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
@@ -18,7 +13,11 @@
     "todomvc-common": "~1.0.1"
   },
   "devDependencies": {
-    "browserify": "~9.0.3"
+    "browserify": "~9.0.3",
+    "webpack": "~1.7.3"
+  },
+  "scripts": {
+    "test": "jest"
   },
   "browserify": {
     "transform": [
