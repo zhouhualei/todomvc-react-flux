@@ -2,28 +2,27 @@
   "name": "react-flux",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "js/app.js",
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
+    "react": "~0.12.2",
     "flux": "~2.0.1",
     "keymirror": "~0.1.1",
     "object-assign": "~2.0.0",
-    "react": "~0.13.0",
-    "todomvc-common": "~1.0.1"
+    "todomvc-app-css": "^1.0.0",
+    "todomvc-common": "^1.0.1"
   },
   "devDependencies": {
     "browserify": "~9.0.3",
-    "webpack": "~1.7.3"
+    "webpack": "~1.7.3",
+    "webpack-dev-server": "~1.7.0"
   },
   "scripts": {
-    "test": "jest"
-  },
-  "browserify": {
-    "transform": [
-      "reactify",
-      "envify"
-    ]
+    "test": "jest",
+    "start": "webpack-dev-server --config webpack.config.js --progress --colors --port 2992  --no-info",
+    "hot-dev-server": "webpack-dev-server --config webpack-hot-dev-server.config.js --hot --progress --colors --port 2992 --inline",
+    "build": "webpack --config webpack.config.js --progress --profile --colors"
   },
   "jest": {
     "rootDir": "./js"

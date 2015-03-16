@@ -9,6 +9,7 @@ var TodoConstants = require('../constants/TodoConstants');
 var TodoActions = {
 
   create: function(text) {
+    console.log("createing text: " + text);
     AppDispatcher.dispatch({
       actionType: TodoConstants.TODO_CREATE,
       text: text

@@ -18,7 +18,7 @@ var Header = React.createClass({
     );
   },
 
-  _onSave: function() {
+  _onSave: function(text) {
     if(text.trim()) {
       TodoActions.create(text);
     }

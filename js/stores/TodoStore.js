@@ -131,6 +131,7 @@ AppDispatcher.register(function(action) {
       // unknown action
   }
 
+  console.log(_todos);
 });
 
 module.exports = TodoStore;
