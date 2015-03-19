@@ -1,8 +1,8 @@
 module.exports = {
     cache: true,
-    entry: "./js/app.js",
+    entry: "./app/js/app.js",
     output: {
-        path: __dirname + "/js",
+        path: __dirname + "/app",
         filename: "bundle.js"
     },
     devtool: "source-map",

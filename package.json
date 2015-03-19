@@ -20,9 +20,9 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "webpack-dev-server --config webpack.config.js --progress --colors --port 2992  --no-info",
+    "start": "webpack-dev-server --config webpack.config.js --content-base app --colors --port 2992  --no-info",
     "hot-dev-server": "webpack-dev-server --config webpack-hot-dev-server.config.js --hot --progress --colors --port 2992 --inline",
-    "build": "webpack --config webpack.config.js --progress --profile --colors"
+    "build": "webpack --config webpack.config.js --content-base app --progress --profile --colors"
   },
   "jest": {
     "rootDir": "./js"
